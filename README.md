@@ -65,9 +65,9 @@ Customization customization = new Customization()
 PostData postData = new PostData()
     .setAmount(new BigDecimal("100"))
     .setCurrency("ETB")
-    .setFirstName("Abebe")
-    .setLastName("Bikila")
-    .setEmail("abebe@bikila")
+    .setFirstName("muaz")
+    .setLastName("ahmed")
+    .setEmail("mobo0480@gmail.com")
     .setTxRef(Util.generateToken())
     .setCallbackUrl("https://chapa.co")
     .setReturnUrl("https://chapa.co")
@@ -79,9 +79,9 @@ Or, you can use a string JSON data.
 String formData = " { " +
         "'amount': '100', " +
         "'currency': 'ETB'," +
-        "'email': 'abebe@bikila.com'," +
-        "'first_name': 'Abebe'," +
-        "'last_name': 'Bikila'," +
+        "'email': 'mobo0480@gmail.com'," +
+        "'first_name': 'muaz'," +
+        "'last_name': 'ahmed'," +
         "'tx_ref': 'tx-myecommerce12345'," +
         "'callback_url': 'https://chapa.co'," +
         "'subaccount[id]': 'ACCT_xxxxxxxxx'," +
@@ -114,9 +114,9 @@ List<Bank> banks = chapa.getBanks();
 To create a subaccount, you can specify your information by either using our `Subaccount` class.
 ```java
 SubAccount subAccount = new SubAccount()
-                .setBusinessName("Abebe Suq")
-                .setAccountName("Abebe Bikila")
-                .setAccountNumber("0123456789")
+                .setBusinessName("muaz Suq")
+                .setAccountName("muaz ahmed")
+                .setAccountNumber("0931981362")
                 .setBankCode("96e41186-29ba-4e30-b013-2ca36d7e7025")
                 .setSplitType(SplitType.PERCENTAGE)
                 .setSplitValue(0.2);
@@ -124,9 +124,9 @@ SubAccount subAccount = new SubAccount()
 Or, you can use a string JSON data.
 ```java
 String subAccount = " { " +
-        "'business_name': 'Abebe Suq', " +
-        "'account_name': 'Abebe Bikila'," +
-        "'account_number': '0123456789'," +
+        "'business_name': 'muaz Suq', " +
+        "'account_name': 'muaz ahmed'," +
+        "'account_number': '0931981362'," +
         "'bank_code': '96e41186-29ba-4e30-b013-2ca36d7e7025'," +
         "'split_type': 'percentage'," +
         "'split_value': '0.2'" +
@@ -164,9 +164,9 @@ public class ChapaExample {
       PostData postData = new PostData()
                 .setAmount(new BigDecimal("100"))
                 .setCurrency("ETB")
-                .setFirstName("Abebe")
-                .setLastName("Bikila")
-                .setEmail("abebe@bikila")
+                .setFirstName("muaz")
+                .setLastName("ahmed")
+                .setEmail("muaz@ahmed")
                 .setTxRef(Util.generateToken())
                 .setCallbackUrl("https://chapa.co")
                 .setReturnUrl("https://chapa.co")
@@ -174,9 +174,9 @@ public class ChapaExample {
                 .setCustomization(customization);
       
       SubAccount subAccount = new SubAccount()
-                .setBusinessName("Abebe Suq")
-                .setAccountName("Abebe Bikila")
-                .setAccountNumber("0123456789")
+                .setBusinessName("muaz Suq")
+                .setAccountName("muaz ahmed")
+                .setAccountNumber("0931981362")
                 .setBankCode("96e41186-29ba-4e30-b013-2ca36d7e7025")
                 .setSplitType(SplitType.PERCENTAGE)
                 .setSplitValue(0.2);
